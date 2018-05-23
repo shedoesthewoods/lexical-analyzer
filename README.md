@@ -1,15 +1,15 @@
-# lexical-analyzer
+# Lexical Analyzer
 Lexical analyzer for psi++ language
 
 Programming Languages Project 1: Lexical Analyzer for Psi++
 Lexical rules for the programming language Psi++ are as follows:
 1- Identifiers:
-    • Maximum identifier size is 30 characters. If you use an identifier larger than that, the lexical analyzer issues an error message.
+    • Maximum identifier size is 30 characters.
     • Psi++ language is not case sensitive and all the identifier names are standardized as lower case.
-    • Identifiers start with an alphabetic character (a letter) and are composed of one or more letters/digits/_ (underscore)
+    • Identifiers start with an alphabetic character and are composed of one or more letters/digits/_
     • Example Token: Identifier(my_var_1)
 2- Integer constants
-    • Maximum integer size is 10 digits. If you use an integer value longer than that, the lexical analyzer issues an error message.
+    • Maximum integer size is 10 digits.
     • Negative values are not supported.
     • Example Token: IntConst(1290)
 3- Operators
@@ -35,22 +35,3 @@ long,record,return,static,while
 8- Comments: Anything between /* and */ is a comment.
     • If a comment cannot terminate before the file end, there should be a lexical error issued.
     • Comments are just like blank space and they provide no tokens.
-    
-    
-if code.psi contains:
-
-hi:=hello+25; /*addition */
-hello++; /*increment*/
-
-
-code.lex would be:
-
-Identifier(hi)
-Operator(:=)
-Identifier(hello)
-Operator(+)
-IntConst(25)
-EndOfLine
-Identifier(hello)
-Operator(++)
-EndOfLine
