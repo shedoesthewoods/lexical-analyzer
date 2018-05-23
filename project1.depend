@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1526492105 source:c:\users\metal\c projects\project1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1525266005 c:\users\metal\c projects\project1\identifier.h
+
+1525287578 source:c:\users\selin\desktop\pl\project1\project1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"identifier.h"
+
+1525287737 c:\users\selin\desktop\pl\project1\project1\identifier.h
+
+1525544984 source:c:\users\metal\c projects\project1\project1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
